@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Hellen Anyango</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Burgundy Header & Footer Only */
+        header {
+            background-color: #800020;
+            padding: 1rem 0;
+        }
+        header h1, nav a {
+            color: white;
+        }
+        nav a:hover, nav a.active {
+            color: #D4A59A;
+        }
+        nav a.active::after {
+            background-color: #D4A59A;
+        }
+        footer {
+            background-color: #800020;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hellen Anyango</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <img src="./images/hellen.jpg" alt="Hellen Anyango" class="profile-img">
+            <h2>About Me</h2>
+            <p>Hello! I'm Hellen Anyango, a passionate microbiology student at JKUAT with a love for plant-based cooking and food science. I specialize in creating delicious vegan recipes that are both nutritious and environmentally friendly.</p>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <p>Bachelor of Science in Microbiology<br>Jomo Kenyatta University of Agriculture and Technology</p>
+                </div>
+                <div class="about-card">
+                    <h3><i class="fas fa-heart"></i> Interests</h3>
+                    <p>Food Microbiology • Vegan Nutrition • Sustainable Cooking • Yoga • Recipe Development</p>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <h3><i class="fas fa-address-card"></i> Contact</h3>
+                <p><strong>Email:</strong> anyangohellen330@gmail.com</p>
+                <p><strong>Phone:</strong> 0752585261</p>
+                <p><strong>Instagram:</strong> @h._ellen_</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Hellen Anyango | 
+                <a href="https://instagram.com/h._ellen_" target="_blank"><i class="fab fa-instagram"></i></a> 
+                <a href="tel:0752585261"><i class="fas fa-phone"></i></a> 
+                <a href="mailto:anyangohellen330@gmail.com"><i class="fas fa-envelope"></i></a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

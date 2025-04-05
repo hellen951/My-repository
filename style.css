@@ -1,0 +1,527 @@
+:root {
+    --primary: #4f46e5;
+    --secondary: #f39c12;
+    --dark: #5C0013; /* Changed to dark burgundy */
+    --light: #f8f9fa;
+    --text: #333;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--light);
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    background: linear-gradient(rgba(92, 0, 19, 0.8), rgba(92, 0, 19, 0.8)), 
+                url('./images/lab-background.jpg') center/cover no-repeat;
+    color: white;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+/* Hero Content Styling */
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.hero-highlights {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    text-align: left;
+    border-left: 3px solid #4f46e5;
+}
+
+.hero-highlights i {
+    color: #f39c12;
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 0.8rem 1.8rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-outline {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #5C0013;
+}
+
+/* Footer Styling */
+footer {
+    background: #5C0013;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.social-links {
+    margin: 1rem 0;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #f39c12;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #5C0013;
+    color: var(--white);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: var(--secondary);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(92, 0, 19, 0.7), rgba(92, 0, 19, 0.7)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-highlights {
+    background: rgba(255,255,255,0.8);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-highlights i {
+    color: #4f46e5;
+    margin-right: 10px;
+}
+
+.hero-highlights p {
+    margin: 0.5rem 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #e67e22;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.features {
+    padding: 3rem 0;
+}
+
+.feature-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.about {
+    padding: 3rem 0;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--secondary);
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.about-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-card h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.recipe-gallery {
+    padding: 3rem 0;
+}
+
+.filter-options {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: var(--white);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.recipe-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.recipe-card {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Recipe Cards with Links */
+.recipe-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.recipe-card {
+    display: block;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.card-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.recipe-card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.recipe-meta {
+    display: flex;
+    gap: 1rem;
+    margin: 0.5rem 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.hover-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    color: #555;
+}
+
+.recipe-card:hover .hover-details {
+    max-height: 100px;
+    margin-top: 1rem;
+}
+
+.view-recipe {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #f39c12;
+    font-weight: bold;
+}
+
+.recipe-info {
+    padding: 1.5rem;
+}
+
+.meal-planner {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.planning-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.day-card {
+    background: var(--light);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.day-card:hover {
+    background: #e8f4fc;
+}
+
+.day-card.selected {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.recipe-page {
+    padding: 2rem 0;
+}
+
+.recipe-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.recipe-hero {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.recipe-meta {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+    color: #666;
+}
+
+.recipe-meta i {
+    margin-right: 5px;
+    color: #f39c12;
+}
+
+.recipe-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.ingredients, .instructions, .nutrition, .tips {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition-table th, .nutrition-table td {
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.nutrition-table th {
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+    .recipe-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer {
+    background: #5C0013;
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: var(--white);
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--secondary);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .features .container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

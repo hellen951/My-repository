@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Mint Dessert | Hellen's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .recipe-actions {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .action-btn {
+            background: var(--light);
+            border: 1px solid #ddd;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .action-btn:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        .recipe-notes {
+            background: rgba(79, 70, 229, 0.05);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--secondary);
+            margin: 2rem 0;
+        }
+        .recipe-notes h3 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hellen Anyango</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="recipe-page">
+        <div class="container">
+            <div class="recipe-header">
+                <h1>Chocolate Mint Dessert</h1>
+                <div class="recipe-actions">
+                    <button class="action-btn" onclick="window.print()">
+                        <i class="fas fa-print"></i> Print
+                    </button>
+                    <button class="action-btn" onclick="window.location.href='mailto:?subject=Chocolate Mint Dessert Recipe&body=Check out this delicious recipe: ' + window.location.href;">
+                        <i class="fas fa-envelope"></i> Email
+                    </button>
+                </div>
+                <img src="./images/A classic pairing of smooth chocolate and cool….jpg" alt="Chocolate Mint Dessert" class="recipe-hero">
+            </div>
+
+            <div class="recipe-content">
+                <div class="ingredients">
+                    <h2><i class="fas fa-shopping-basket"></i> Ingredients</h2>
+                    <ul>
+                        <li>1 (12-oz) bag mint chocolate chips</li>
+                        <li>1 TBSP butter</li>
+                        <li>3 TBSP heavy whipping cream</li>
+                        <li>½ tsp peppermint extract</li>
+                        <li>2 drops green food coloring (optional)</li>
+                        <li>½ cup semi-sweet chocolate chips</li>
+                    </ul>
+                </div>
+
+                <div class="instructions">
+                    <h2><i class="fas fa-list-ol"></i> Instructions</h2>
+                    <ol>
+                        <li>Line a quarter baker sheet with parchment paper and set aside.</li>
+                        <li>Microwave semi-sweet chocolate chips for 1 minute. Let sit 1 minute, then microwave 1 additional minute. Set aside.</li>
+                        <li>Combine mint chocolate chips, butter, and whipping cream in microwave-safe bowl. Microwave 1 minute 30 seconds.</li>
+                        <li>Let sit 2 minutes, then microwave 30 more seconds. Let sit 1 minute.</li>
+                        <li>Add peppermint extract and food coloring (if using). Stir until smooth.</li>
+                        <li>Pour mint mixture onto prepared sheet and spread to ⅓" thickness.</li>
+                        <li>Stir reserved semi-sweet chocolate until smooth. Drizzle over mint layer.</li>
+                        <li>Drag a knife through to create swirl patterns.</li>
+                        <li>Let cool completely, then cut into 1" squares.</li>
+                        <li>Store chilled in airtight container.</li>
+                    </ol>
+                </div>
+
+                <div class="recipe-notes">
+                    <h3><i class="fas fa-sticky-note"></i> Recipe Notes</h3>
+                    <p>Mint Chocolates are one of my favorite treats! It's my favorite flavor combination so I love making mint chocolate desserts for the holidays. This recipe couldn't be much easier! I used my recipe for Tiger Butter as inspiration. It's a simple swirled chocolate confection that's not a fudge but yet not a bark either. The Mint Chocolates are soft, like fudge, but much thinner, which makes them easy to eat as they're not overly rich. They're the perfect addition to your neighbor gift plates, as they're so pretty. One bite of these little treats and you're sold - they taste just like Andes mints. Enjoy!</p>
+                </div>
+
+                <div class="nutrition-3d">
+                    <h2><i class="fas fa-chart-pie"></i> Nutrition Facts (per piece)</h2>
+                    <div class="nutrition-grid">
+                        <div class="nutrient-card">
+                            <div class="nutrient-value">85</div>
+                            <div class="nutrient-label">Calories</div>
+                        </div>
+                        <div class="nutrient-card">
+                            <div class="nutrient-value">9g</div>
+                            <div class="nutrient-label">Carbs</div>
+                        </div>
+                        <div class="nutrient-card">
+                            <div class="nutrient-value">1g</div>
+                            <div class="nutrient-label">Protein</div>
+                        </div>
+                        <div class="nutrient-card">
+                            <div class="nutrient-value">5g</div>
+                            <div class="nutrient-label">Fat</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="menu.html" class="btn"><i class="fas fa-arrow-left"></i> Back to Recipes</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Hellen Anyango | 
+                <a href="https://instagram.com/h._ellen_" target="_blank"><i class="fab fa-instagram"></i></a> 
+                <a href="tel:0752585261"><i class="fas fa-phone"></i></a> 
+                <a href="mailto:anyangohellen330@gmail.com"><i class="fas fa-envelope"></i></a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

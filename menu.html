@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegan Recipes | Hellen's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Burgundy Header & Footer Only */
+        header {
+            background-color: #800020;
+            padding: 1rem 0;
+        }
+        header h1, nav a {
+            color: white;
+        }
+        nav a:hover, nav a.active {
+            color: #D4A59A;
+        }
+        nav a.active::after {
+            background-color: #D4A59A;
+        }
+        footer {
+            background-color: #800020;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hellen Anyango</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="menu">
+        <div class="container">
+            <h1>My Vegan Recipes</h1>
+            <p>Click any recipe card to view full details</p>
+
+            <div class="recipe-cards">
+                <a href="recipe.html" class="recipe-card">
+                    <div class="card-image">
+                        <img src="./images/Quick & Flavorful Vegan Vodka Pasta with Gochujang.jpg" alt="Vegan Vodka Pasta">
+                    </div>
+                    <div class="card-content">
+                        <h3>Vegan Vodka Pasta</h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 30 mins</span>
+                            <span><i class="fas fa-users"></i> Serves 4</span>
+                        </div>
+                        <div class="hover-details">
+                            <p>Creamy vodka pasta with cashew cream and fresh basil</p>
+                            <span class="view-recipe">View Recipe →</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="recipe 2.html" class="recipe-card">
+                    <div class="card-image">
+                        <img src="./images/8232a1a7-0b88-4384-84d1-2b0e611dad21.jpg" alt="Chocolate Mint Dessert">
+                    </div>
+                    <div class="card-content">
+                        <h3>Chocolate Mint Dessert</h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 45 mins</span>
+                            <span><i class="fas fa-users"></i> Serves 6</span>
+                        </div>
+                        <div class="hover-details">
+                            <p>Rich chocolate avocado mousse with fresh mint</p>
+                            <span class="view-recipe">View Recipe →</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Hellen Anyango | 
+                <a href="https://instagram.com/h._ellen_" target="_blank"><i class="fab fa-instagram"></i></a> 
+                <a href="tel:0752585261"><i class="fas fa-phone"></i></a> 
+                <a href="mailto:anyangohellen330@gmail.com"><i class="fas fa-envelope"></i></a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
+</html>
